@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакти</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Зворотний зв'язок</h1>
+<nav>
+<a href="index.html">Головна</a>
+</nav>
+</header>
+
+<main>
+
+<section>
+
+<h2>Напишіть нам</h2>
+
+<form>
+
+<div class="form-group">
+<label for="username">Ім’я</label>
+<input
+type="text"
+id="username"
+placeholder="Ваше ім'я"
+required>
+</div>
+
+<div class="form-group">
+<label for="phone">Телефон</label>
+<input
+type="tel"
+id="phone"
+placeholder="+380XXXXXXXXX"
+pattern="^\+380[0-9]{9}$"
+required>
+</div>
+
+<div class="form-group">
+<label for="message">Повідомлення</label>
+<textarea
+id="message"
+placeholder="Ваше повідомлення"
+required
+minlength="10"
+maxlength="200"></textarea>
+</div>
+
+<button type="submit" class="button">
+Надіслати
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+</body>
+</html>
