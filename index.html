@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Seal Helper</title>
+
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
 <header class="header">
-    <h1>Seal Helper</h1>
 
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="register.html">Реєстрація</a></li>
-            <li><a href="contact.html">Контакти</a></li>
-        </ul>
-    </nav>
+<h1>Seal Helper</h1>
+
+<button class="burger" id="burger">
+☰
+</button>
+
+<nav class="nav" id="nav">
+
+<ul class="menu">
+
+<li><a href="#">Головна</a></li>
+
+<li><a href="#">Тюлені</a></li>
+
+<li><a href="#">Допомога</a></li>
+
+<li><a href="#">Контакти</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
-<main>
 
-<section class="about">
-<h2>Про проєкт</h2>
-<p>
-Seal Helper — це інформаційний сайт, який допомагає поширювати інформацію
-про захист тюленів та збереження морських екосистем.
-</p>
-</section>
+<main>
 
 <section class="seals">
 
 <h2>Наші тюлені</h2>
 
-<article class="seal-card">
-<img src="img/seal1.jpg" alt="Молодий тюлень на льоду">
+<div class="cards">
+
+<article class="card">
+
+<img src="img/seal1.jpg" alt="Тюлень на льоду">
+
 <h3>Арктичний тюлень</h3>
-<p>
-Арктичні тюлені живуть у холодних водах і відіграють важливу роль
-у морській екосистемі.
-</p>
-<button class="button">Дізнатись більше</button>
+
+<p>Живе у холодних водах Арктики.</p>
+
+<button>Детальніше</button>
+
 </article>
 
-<article class="seal-card">
-<img src="img/seal2.jpg" alt="Тюлень плаває у воді">
+<article class="card">
+
+<img src="img/seal2.jpg" alt="Тюлень у воді">
+
 <h3>Сірий тюлень</h3>
-<p>
-Сірі тюлені зустрічаються у Північній Атлантиці та потребують захисту
-від забруднення океану.
-</p>
-<button class="button">Дізнатись більше</button>
+
+<p>Поширений у Північній Атлантиці.</p>
+
+<button>Детальніше</button>
+
 </article>
+
+<article class="card">
+
+<img src="img/seal3.jpg" alt="Маленький тюлень">
+
+<h3>Гренландський тюлень</h3>
+
+<p>Відомий білим хутром у дитинстві.</p>
+
+<button>Детальніше</button>
+
+</article>
+
+<article class="card">
+
+<img src="img/seal4.jpg" alt="Тюлень на камені">
+
+<h3>Морський тюлень</h3>
+
+<p>Часто мешкає біля берегів.</p>
+
+<button>Детальніше</button>
+
+</article>
+
+</div>
 
 </section>
 
-<aside class="news">
-<h2>Новини</h2>
-<p>
-Нещодавно було створено новий заповідник для захисту тюленів.
-</p>
-</aside>
-
 </main>
 
-<footer class="footer">
+<footer>
+
 <p>© 2026 Seal Helper</p>
+
 </footer>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

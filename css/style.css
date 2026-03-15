@@ -1,119 +1,169 @@
-/* CSS змінні */
-
-:root {
-
---color-bg: #f9fafb;
---color-text: #1f2933;
---color-primary: #3b82f6;
---color-error: #ef4444;
---color-success: #22c55e;
-
---font-main: Arial, sans-serif;
-
---spacing: 16px;
-
---border-radius: 8px;
-
-}
-
-/* Загальні стилі */
+/* базові стилі */
 
 body{
-font-family: var(--font-main);
-background: var(--color-bg);
-color: var(--color-text);
+
+font-family: Arial, sans-serif;
+
 margin:0;
-padding:0;
+
+background:#f4f6f8;
+
 }
 
-/* Header */
+/* header */
 
 .header{
-background: var(--color-primary);
-color:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
 padding:20px;
+
+background:#3b82f6;
+
+color:white;
+
 }
 
-.nav ul{
-display:flex;
-gap:20px;
+/* меню */
+
+.menu{
+
 list-style:none;
+
 padding:0;
-}
 
-.nav a{
-color:white;
-text-decoration:none;
-}
+margin:0;
 
-/* Section */
+display:none;
 
-section{
-padding:30px;
-}
-
-/* Card */
-
-.seal-card{
-background:white;
-padding:20px;
-border-radius:var(--border-radius);
-margin-bottom:20px;
-}
-
-/* Image */
-
-img{
-max-width:100%;
-border-radius:var(--border-radius);
-}
-
-/* Button */
-
-.button{
-background:var(--color-primary);
-color:white;
-border:none;
-padding:10px 20px;
-border-radius:var(--border-radius);
-cursor:pointer;
-}
-
-/* Focus accessibility */
-
-button:focus,
-a:focus,
-input:focus,
-textarea:focus{
-
-outline:3px solid black;
-
-}
-
-/* Form */
-
-.form-group{
-display:flex;
 flex-direction:column;
-margin-bottom:20px;
+
 }
 
-/* Validation */
+.menu li{
 
-input:valid,
-textarea:valid{
-border:2px solid var(--color-success);
+margin:10px 0;
+
 }
 
-input:invalid,
-textarea:invalid{
-border:2px solid var(--color-error);
+.menu a{
+
+text-decoration:none;
+
+color:white;
+
 }
 
-/* Footer */
+/* бургер */
 
-.footer{
-text-align:center;
+.burger{
+
+font-size:24px;
+
+background:none;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+/* відкриття меню */
+
+.nav.active .menu{
+
+display:flex;
+
+}
+
+/* картки */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
 padding:20px;
-background:#e5e7eb;
+
+}
+
+.card{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+text-align:center;
+
+}
+
+.card img{
+
+width:100%;
+
+border-radius:10px;
+
+}
+
+/* tablet */
+
+@media (min-width:480px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* tablet large */
+
+@media (min-width:768px){
+
+.cards{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.menu{
+
+display:flex;
+
+flex-direction:row;
+
+gap:20px;
+
+}
+
+.burger{
+
+display:none;
+
+}
+
+}
+
+/* desktop */
+
+@media (min-width:1024px){
+
+.cards{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
 }
