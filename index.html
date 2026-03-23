@@ -3,7 +3,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Seal Helper</title>
@@ -14,86 +13,90 @@
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-<h1>Seal Helper</h1>
+<div class="logo">Seal Helper</div>
 
-<button class="burger" id="burger">
+<button class="burger" id="burger" aria-label="Відкрити меню">
 ☰
 </button>
 
-<nav class="nav" id="nav">
+<nav class="nav" id="nav" aria-label="Головне меню">
 
 <ul class="menu">
-
-<li><a href="#">Головна</a></li>
-
-<li><a href="#">Тюлені</a></li>
-
-<li><a href="#">Допомога</a></li>
-
-<li><a href="#">Контакти</a></li>
-
+<li><a href="index.html">Головна</a></li>
+<li><a href="donate.html">Допомога</a></li>
+<li><a href="contact.html">Контакти</a></li>
 </ul>
 
 </nav>
 
 </header>
 
+<!-- MAIN -->
 
-<main>
+<main class="container">
 
-<section class="seals">
+<!-- HERO -->
 
-<h2>Наші тюлені</h2>
+<section class="hero" aria-labelledby="hero-title">
+
+<h1 id="hero-title">Захистимо тюленів разом</h1>
+
+<p>
+Seal Helper — це інформаційний проєкт, спрямований на допомогу
+тюленям та збереження морської екосистеми.
+</p>
+
+</section>
+
+<!-- SEALS -->
+
+<section aria-labelledby="seals-title">
+
+<h2 id="seals-title">Наші тюлені</h2>
 
 <div class="cards">
 
 <article class="card">
 
-<img src="img/seal1.jpg" alt="Тюлень на льоду">
+<img src="img/seal1.jpg" alt="Тюлень лежить на льоду">
 
 <h3>Арктичний тюлень</h3>
 
 <p>Живе у холодних водах Арктики.</p>
 
-<button>Детальніше</button>
-
 </article>
 
 <article class="card">
 
-<img src="img/seal2.jpg" alt="Тюлень у воді">
+<img src="img/seal2.jpg" alt="Тюлень плаває у воді">
 
 <h3>Сірий тюлень</h3>
 
-<p>Поширений у Північній Атлантиці.</p>
-
-<button>Детальніше</button>
+<p>Поширений у Атлантичному океані.</p>
 
 </article>
 
 <article class="card">
 
-<img src="img/seal3.jpg" alt="Маленький тюлень">
+<img src="img/seal3.jpg" alt="Маленький білий тюлень">
 
 <h3>Гренландський тюлень</h3>
 
-<p>Відомий білим хутром у дитинстві.</p>
-
-<button>Детальніше</button>
+<p>Відомий своїм білим хутром у дитинстві.</p>
 
 </article>
 
 <article class="card">
 
-<img src="img/seal4.jpg" alt="Тюлень на камені">
+<img src="img/seal4.jpg" alt="Тюлень на камені біля моря">
 
 <h3>Морський тюлень</h3>
 
-<p>Часто мешкає біля берегів.</p>
-
-<button>Детальніше</button>
+<p>Живе біля узбережжя океану.</p>
 
 </article>
 
@@ -103,7 +106,14 @@
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
+
+<address>
+Email: sealhelper@gmail.com <br>
+Телефон: +380991234567
+</address>
 
 <p>© 2026 Seal Helper</p>
 

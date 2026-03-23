@@ -1,169 +1,274 @@
-/* базові стилі */
+:root{
+--color-primary:#7c3aed;
+--color-bg:#f5f6fa;
+--color-card:#ffffff;
+--color-text:#1f2937;
+--color-muted:#6b7280;
+--color-success:#22c55e;
+--color-error:#ef4444;
+
+--radius:12px;
+--spacing:20px;
+--max-width:1300px;
+}
+
+/* reset */
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
 body{
-
-font-family: Arial, sans-serif;
-
-margin:0;
-
-background:#f4f6f8;
-
+font-family:Arial, sans-serif;
+background:var(--color-bg);
+color:var(--color-text);
+line-height:1.6;
 }
 
-/* header */
+/* container */
+
+.container{
+max-width:var(--max-width);
+margin:0 auto;
+padding:20px;
+}
+
+/* ===== HEADER ===== */
 
 .header{
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
-padding:20px;
-
-background:#3b82f6;
-
+padding:20px 30px;
+background:var(--color-primary);
 color:white;
-
+position:sticky;
+top:0;
+z-index:100;
 }
 
-/* меню */
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+/* nav */
+
+.nav{
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:var(--color-primary);
+display:none;
+}
+
+.nav.active{
+display:block;
+}
 
 .menu{
-
 list-style:none;
-
-padding:0;
-
-margin:0;
-
-display:none;
-
+display:flex;
 flex-direction:column;
-
+text-align:center;
 }
 
 .menu li{
-
-margin:10px 0;
-
+padding:15px;
 }
 
 .menu a{
-
-text-decoration:none;
-
 color:white;
-
+text-decoration:none;
+font-size:18px;
 }
 
-/* бургер */
+/* burger */
 
 .burger{
-
-font-size:24px;
-
+font-size:26px;
 background:none;
-
 border:none;
-
 color:white;
-
 cursor:pointer;
-
 }
 
-/* відкриття меню */
+/* ===== HERO ===== */
 
-.nav.active .menu{
-
-display:flex;
-
+.hero{
+text-align:center;
+padding:60px 20px;
 }
 
-/* картки */
+.hero h1{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+color:var(--color-muted);
+}
+
+/* ===== CARDS ===== */
 
 .cards{
-
 display:grid;
-
 grid-template-columns:1fr;
-
 gap:20px;
-
-padding:20px;
-
+margin-top:30px;
 }
 
 .card{
-
-background:white;
-
+background:var(--color-card);
 padding:20px;
+border-radius:var(--radius);
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+}
 
-border-radius:10px;
-
-text-align:center;
-
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
-
 width:100%;
-
 border-radius:10px;
-
 }
 
-/* tablet */
+/* ===== FORMS ===== */
 
-@media (min-width:480px){
+.form-group{
+display:flex;
+flex-direction:column;
+margin-bottom:15px;
+}
+
+input, button{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:16px;
+}
+
+button{
+background:var(--color-primary);
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* validation */
+
+input:valid{
+border:2px solid var(--color-success);
+}
+
+input:invalid{
+border:2px solid var(--color-error);
+}
+
+/* focus */
+
+:focus-visible{
+outline:3px solid black;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+margin-top:40px;
+background:#111827;
+color:white;
+padding:30px 20px;
+text-align:center;
+}
+
+footer address{
+font-style:normal;
+color:#d1d5db;
+}
+
+/* ===== ADAPTIVE ===== */
+
+/* 480px */
+
+@media(min-width:480px){
 
 .cards{
-
 grid-template-columns:repeat(2,1fr);
+}
 
+.hero h1{
+font-size:36px;
 }
 
 }
 
-/* tablet large */
+/* 768px */
 
-@media (min-width:768px){
+@media(min-width:768px){
 
-.cards{
+/* меню горизонтальне */
 
-grid-template-columns:repeat(3,1fr);
-
+.nav{
+position:static;
+display:block;
+width:auto;
+background:none;
 }
 
 .menu{
-
-display:flex;
-
 flex-direction:row;
+gap:25px;
+}
 
-gap:20px;
-
+.menu li{
+padding:0;
 }
 
 .burger{
-
 display:none;
-
 }
 
-}
-
-/* desktop */
-
-@media (min-width:1024px){
+/* grid */
 
 .cards{
+grid-template-columns:repeat(3,1fr);
+}
 
+.hero h1{
+font-size:44px;
+}
+
+}
+
+/* 1024px */
+
+@media(min-width:1024px){
+
+.cards{
 grid-template-columns:repeat(4,1fr);
+}
 
+.container{
+padding:40px;
+}
+
+.hero{
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:52px;
+}
+
+footer{
+padding:50px;
 }
 
 }
