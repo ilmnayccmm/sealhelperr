@@ -14,7 +14,6 @@
 <body>
 
 <!-- HEADER -->
-
 <header class="header">
 
 <div class="logo">Seal Helper</div>
@@ -32,15 +31,12 @@
 </ul>
 
 </nav>
-
 </header>
 
 <!-- MAIN -->
-
 <main class="container">
 
 <!-- HERO -->
-
 <section class="hero" aria-labelledby="hero-title">
 
 <h1 id="hero-title">Захистимо тюленів разом</h1>
@@ -50,53 +46,68 @@ Seal Helper — це інформаційний проєкт, спрямован
 тюленям та збереження морської екосистеми.
 </p>
 
+<!-- CTA BUTTON (ПРАКТИЧНА) -->
+<button class="cta-btn" id="ctaBtn">Відправити</button>
+
+</section>
+
+<!-- FILTERS (ПРАКТИЧНА) -->
+<section class="filters">
+
+<button data-filter="all">Всі</button>
+<button data-filter="arctic">Арктика</button>
+<button data-filter="sea">Море</button>
+
 </section>
 
 <!-- SEALS -->
-
 <section aria-labelledby="seals-title">
 
 <h2 id="seals-title">Наші тюлені</h2>
 
 <div class="cards">
 
-<article class="card">
+<article class="card" data-category="arctic">
 
 <img src="img/seal1.jpg" alt="Тюлень лежить на льоду">
 
 <h3>Арктичний тюлень</h3>
-
 <p>Живе у холодних водах Арктики.</p>
+
+<span class="heart">♡</span>
 
 </article>
 
-<article class="card">
+<article class="card" data-category="sea">
 
 <img src="img/seal2.jpg" alt="Тюлень плаває у воді">
 
 <h3>Сірий тюлень</h3>
-
 <p>Поширений у Атлантичному океані.</p>
+
+<span class="heart">♡</span>
 
 </article>
 
-<article class="card">
+<article class="card" data-category="arctic">
 
 <img src="img/seal3.jpg" alt="Маленький білий тюлень">
 
 <h3>Гренландський тюлень</h3>
-
 <p>Відомий своїм білим хутром у дитинстві.</p>
+
+<span class="heart">♡</span>
 
 </article>
 
-<article class="card">
+<article class="card" data-category="sea">
 
 <img src="img/seal4.jpg" alt="Тюлень на камені біля моря">
 
 <h3>Морський тюлень</h3>
-
 <p>Живе біля узбережжя океану.</p>
+
+<span class="heart">♡</span>
 
 </article>
 
@@ -107,7 +118,6 @@ Seal Helper — це інформаційний проєкт, спрямован
 </main>
 
 <!-- FOOTER -->
-
 <footer>
 
 <address>

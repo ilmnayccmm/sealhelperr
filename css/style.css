@@ -272,3 +272,74 @@ padding:50px;
 }
 
 }
+/* ===== PRACTICAL JS ADD-ONS ===== */
+
+/* FULLSCREEN MOBILE MENU (override твоєї nav) */
+.nav {
+    transition: 0.4s ease;
+}
+
+/* коли відкрите меню */
+.nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(124, 58, 237, 0.98);
+    flex-direction: column;
+}
+
+/* блокування скролу */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* ===== CTA BUTTON (як в вимогах) ===== */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* loading state (JS буде використовувати) */
+button.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* ===== HEART LIKE SYSTEM ===== */
+.card {
+    position: relative;
+}
+
+/* іконка лайку */
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.heart.active {
+    color: red;
+    transform: scale(1.3);
+}
+
+/* ===== FILTER HIDE CLASS ===== */
+.hidden {
+    display: none !important;
+}
