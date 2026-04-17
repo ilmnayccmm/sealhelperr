@@ -1,132 +1,58 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Seal Helper</title>
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
-
 <div class="logo">Seal Helper</div>
 
-<button class="burger" id="burger" aria-label="Відкрити меню">
-☰
-</button>
+<button class="burger" id="burger">☰</button>
 
-<nav class="nav" id="nav" aria-label="Головне меню">
-
+<nav class="nav" id="nav">
 <ul class="menu">
 <li><a href="index.html">Головна</a></li>
 <li><a href="donate.html">Допомога</a></li>
 <li><a href="contact.html">Контакти</a></li>
 </ul>
-
 </nav>
 </header>
 
-<!-- MAIN -->
 <main class="container">
 
-<!-- HERO -->
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero">
+<h1>Захистимо тюленів разом</h1>
+<p>Seal Helper — це інформаційний проєкт.</p>
 
-<h1 id="hero-title">Захистимо тюленів разом</h1>
-
-<p>
-Seal Helper — це інформаційний проєкт, спрямований на допомогу
-тюленям та збереження морської екосистеми.
-</p>
-
-<!-- CTA BUTTON (ПРАКТИЧНА) -->
 <button class="cta-btn" id="ctaBtn">Відправити</button>
-
 </section>
 
-<!-- FILTERS (ПРАКТИЧНА) -->
 <section class="filters">
-
 <button data-filter="all">Всі</button>
 <button data-filter="arctic">Арктика</button>
 <button data-filter="sea">Море</button>
-
 </section>
 
-<!-- SEALS -->
-<section aria-labelledby="seals-title">
+<!-- 🔴 ГОЛОВНЕ: тільки контейнер -->
+<section>
+<h2>Наші тюлені</h2>
 
-<h2 id="seals-title">Наші тюлені</h2>
-
-<div class="cards">
-
-<article class="card" data-category="arctic">
-
-<img src="img/seal1.jpg" alt="Тюлень лежить на льоду">
-
-<h3>Арктичний тюлень</h3>
-<p>Живе у холодних водах Арктики.</p>
-
-<span class="heart">♡</span>
-
-</article>
-
-<article class="card" data-category="sea">
-
-<img src="img/seal2.jpg" alt="Тюлень плаває у воді">
-
-<h3>Сірий тюлень</h3>
-<p>Поширений у Атлантичному океані.</p>
-
-<span class="heart">♡</span>
-
-</article>
-
-<article class="card" data-category="arctic">
-
-<img src="img/seal3.jpg" alt="Маленький білий тюлень">
-
-<h3>Гренландський тюлень</h3>
-<p>Відомий своїм білим хутром у дитинстві.</p>
-
-<span class="heart">♡</span>
-
-</article>
-
-<article class="card" data-category="sea">
-
-<img src="img/seal4.jpg" alt="Тюлень на камені біля моря">
-
-<h3>Морський тюлень</h3>
-<p>Живе біля узбережжя океану.</p>
-
-<span class="heart">♡</span>
-
-</article>
-
+<div id="loader" style="display:none; text-align:center;">
+Завантаження...
 </div>
 
+<div id="items-grid" class="cards"></div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
-
-<address>
-Email: sealhelper@gmail.com <br>
-Телефон: +380991234567
-</address>
-
 <p>© 2026 Seal Helper</p>
-
 </footer>
 
 <script src="js/script.js"></script>

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Арктичний тюлень",
+    "description": "Живе у холодних водах Арктики.",
+    "category": "arctic",
+    "image": "img/seal1.jpg",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "title": "Сірий тюлень",
+    "description": "Поширений у Атлантичному океані.",
+    "category": "sea",
+    "image": "img/seal2.jpg",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "title": "Гренландський тюлень",
+    "description": "Відомий білим хутром.",
+    "category": "arctic",
+    "image": "img/seal3.jpg",
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "title": "Морський тюлень",
+    "description": "Живе біля узбережжя.",
+    "category": "sea",
+    "image": "img/seal4.jpg",
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "title": "Південний тюлень",
+    "description": "Зустрічається в Антарктиці.",
+    "category": "sea",
+    "image": "img/seal2.jpg",
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "title": "Крижаний тюлень",
+    "description": "Любить холодний клімат.",
+    "category": "arctic",
+    "image": "img/seal1.jpg",
+    "inStock": false
+  }
+]
