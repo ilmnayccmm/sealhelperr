@@ -343,3 +343,9 @@ button.loading {
 .hidden {
     display: none !important;
 }
+
+.spinner {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
