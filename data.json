@@ -49,16 +49,16 @@
   },
   {
     "id": 7,
-    "title": "Морський тюлень",
-    "description": "Живе біля узбережжя.",
+    "title": "Плямистий тюлень",
+    "description": "Відомий своєю допитливістю та дружелюбністю.",
     "category": "sea",
     "image": "img/seal(3).jpeg",
     "inStock": true
   },
   {
     "id": 8,
-    "title": "Морський тюлень",
-    "description": "Живе біля узбережжя.",
+    "title": "Прибережний тюлень",
+    "description": "Полюбляє спокійні узбережжя та добре адаптується до життя поруч із людьми.",
     "category": "sea",
     "image": "img/seal(2).jpeg",
     "inStock": true
